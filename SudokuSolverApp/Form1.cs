@@ -33,12 +33,12 @@ namespace SudokuSolverApp
         }
 
         private void solveBtn_Click(object sender, EventArgs e)
-        {                        
-            Sudoku.Solve(array);            
+        {           
+            Sudoku.Solve(array);   
         }
                 
         private void TextBoxChanged(object sender, EventArgs e)
-        {
+        {            
             string textboxName = ((TextBox)sender).Name;
             if (((TextBox)sender).Text != "")
             {
@@ -288,7 +288,258 @@ namespace SudokuSolverApp
                         array[8, 8] = Int32.Parse(i9.Text);
                         break;
                 }
+            }
+                
+            else 
+            {
+                switch (textboxName)
+                {
+                    case "a1":
+                        array[0, 0] = 0;
+                        break;
+                    case "a2":
+                        array[0, 1] = 0;
+                        break;
+                    case "a3":
+                        array[0, 2] = 0;
+                        break;
+                    case "a4":
+                        array[0, 3] = 0;
+                        break;
+                    case "a5":
+                        array[0, 4] = 0;
+                        break;
+                    case "a6":
+                        array[0, 5] = 0;
+                        break;
+                    case "a7":
+                        array[0, 6] = 0;
+                        break;
+                    case "a8":
+                        array[0, 7] = 0;
+                        break;
+                    case "a9":
+                        array[0, 8] = 0;
+                        break;
+                    case "b1":
+                        array[1, 0] = 0;
+                        break;
+                    case "b2":
+                        array[1, 1] = 0;
+                        break;
+                    case "b3":
+                        array[1, 2] = 0;
+                        break;
+                    case "b4":
+                        array[1, 3] = 0;
+                        break;
+                    case "b5":
+                        array[1, 4] = 0;
+                        break;
+                    case "b6":
+                        array[1, 5] = 0;
+                        break;
+                    case "b7":
+                        array[1, 6] = 0;
+                        break;
+                    case "b8":
+                        array[1, 7] = 0;
+                        break;
+                    case "b9":
+                        array[1, 8] = 0;
+                        break;
+                    case "c1":
+                        array[2, 0] = 0;
+                        break;
+                    case "c2":
+                        array[2, 1] = 0;
+                        break;
+                    case "c3":
+                        array[2, 2] = 0;
+                        break;
+                    case "c4":
+                        array[2, 3] = 0;
+                        break;
+                    case "c5":
+                        array[2, 4] = 0;
+                        break;
+                    case "c6":
+                        array[2, 5] = 0;
+                        break;
+                    case "c7":
+                        array[2, 6] = 0;
+                        break;
+                    case "c8":
+                        array[2, 7] = 0;
+                        break;
+                    case "c9":
+                        array[2, 8] = 0;
+                        break;
+                    case "d1":
+                        array[3, 0] = 0;
+                        break;
+                    case "d2":
+                        array[3, 1] = 0;
+                        break;
+                    case "d3":
+                        array[3, 2] = 0;
+                        break;
+                    case "d4":
+                        array[3, 3] = 0;
+                        break;
+                    case "d5":
+                        array[3, 4] = 0;
+                        break;
+                    case "d6":
+                        array[3, 5] = 0;
+                        break;
+                    case "d7":
+                        array[3, 6] = 0;
+                        break;
+                    case "d8":
+                        array[3, 7] = 0;
+                        break;
+                    case "d9":
+                        array[3, 8] = 0;
+                        break;
+                    case "e1":
+                        array[4, 0] = 0;
+                        break;
+                    case "e2":
+                        array[4, 1] = 0;
+                        break;
+                    case "e3":
+                        array[4, 2] = 0;
+                        break;
+                    case "e4":
+                        array[4, 3] = 0;
+                        break;
+                    case "e5":
+                        array[4, 4] = 0;
+                        break;
+                    case "e6":
+                        array[4, 5] = 0;
+                        break;
+                    case "e7":
+                        array[4, 6] = 0;
+                        break;
+                    case "e8":
+                        array[4, 7] = 0;
+                        break;
+                    case "e9":
+                        array[4, 8] = 0;
+                        break;
+                    case "f1":
+                        array[5, 0] = 0;
+                        break;
+                    case "f2":
+                        array[5, 1] = 0;
+                        break;
+                    case "f3":
+                        array[5, 2] = 0;
+                        break;
+                    case "f4":
+                        array[5, 3] = 0;
+                        break;
+                    case "f5":
+                        array[5, 4] = 0;
+                        break;
+                    case "f6":
+                        array[5, 5] = 0;
+                        break;
+                    case "f7":
+                        array[5, 6] = 0;
+                        break;
+                    case "f8":
+                        array[5, 7] = 0;
+                        break;
+                    case "f9":
+                        array[5, 8] = 0;
+                        break;
+                    case "g1":
+                        array[6, 0] = 0;
+                        break;
+                    case "g2":
+                        array[6, 1] = 0;
+                        break;
+                    case "g3":
+                        array[6, 2] = 0;
+                        break;
+                    case "g4":
+                        array[6, 3] = 0;
+                        break;
+                    case "g5":
+                        array[6, 4] = 0;
+                        break;
+                    case "g6":
+                        array[6, 5] = 0;
+                        break;
+                    case "g7":
+                        array[6, 6] = 0;
+                        break;
+                    case "g8":
+                        array[6, 7] = 0;
+                        break;
+                    case "g9":
+                        array[6, 8] = 0;
+                        break;
+                    case "h1":
+                        array[7, 0] = 0;
+                        break;
+                    case "h2":
+                        array[7, 1] = 0;
+                        break;
+                    case "h3":
+                        array[7, 2] = 0;
+                        break;
+                    case "h4":
+                        array[7, 3] = 0;
+                        break;
+                    case "h5":
+                        array[7, 4] = 0;
+                        break;
+                    case "h6":
+                        array[7, 5] = 0;
+                        break;
+                    case "h7":
+                        array[7, 6] = 0;
+                        break;
+                    case "h8":
+                        array[7, 7] = 0;
+                        break;
+                    case "h9":
+                        array[7, 8] = 0;
+                        break;
+                    case "i1":
+                        array[8, 0] = 0;
+                        break;
+                    case "i2":
+                        array[8, 1] = 0;
+                        break;
+                    case "i3":
+                        array[8, 2] = 0;
+                        break;
+                    case "i4":
+                        array[8, 3] = 0;
+                        break;
+                    case "i5":
+                        array[8, 4] = 0;
+                        break;
+                    case "i6":
+                        array[8, 5] = 0;
+                        break;
+                    case "i7":
+                        array[8, 6] = 0;
+                        break;
+                    case "i8":
+                        array[8, 7] = 0;
+                        break;
+                    case "i9":
+                        array[8, 8] = 0;
+                        break;
+                    }
+                }
             }      
         }
     }
-}
+

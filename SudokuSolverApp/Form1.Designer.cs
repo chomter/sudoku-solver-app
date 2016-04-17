@@ -126,7 +126,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.ultraLabel2 = new Infragistics.Win.Misc.UltraLabel();
             this.bottomPanel = new Infragistics.Win.Misc.UltraPanel();
-            this.solveBtn = new Infragistics.Win.Misc.UltraButton();
+            this.solveBtn = new System.Windows.Forms.Button();
             this.topPanel.ClientArea.SuspendLayout();
             this.topPanel.SuspendLayout();
             this.leftPanel.ClientArea.SuspendLayout();
@@ -162,11 +162,11 @@
             this.ultraLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ultraLabel1.Font = new System.Drawing.Font("Microsoft Uighur", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraLabel1.Location = new System.Drawing.Point(244, 3);
+            this.ultraLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ultraLabel1.Location = new System.Drawing.Point(191, 3);
             this.ultraLabel1.Name = "ultraLabel1";
             this.ultraLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ultraLabel1.Size = new System.Drawing.Size(304, 64);
+            this.ultraLabel1.Size = new System.Drawing.Size(379, 64);
             this.ultraLabel1.TabIndex = 0;
             this.ultraLabel1.Text = "Sudoku Solver";
             // 
@@ -1361,14 +1361,13 @@
             // 
             // solveBtn
             // 
-            this.solveBtn.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Button;
             this.solveBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.solveBtn.Location = new System.Drawing.Point(133, 20);
+            this.solveBtn.Location = new System.Drawing.Point(148, 22);
             this.solveBtn.Name = "solveBtn";
-            this.solveBtn.Size = new System.Drawing.Size(171, 37);
-            this.solveBtn.TabIndex = 0;
+            this.solveBtn.Size = new System.Drawing.Size(139, 38);
+            this.solveBtn.TabIndex = 1;
             this.solveBtn.Text = "Solve";
-            this.solveBtn.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            this.solveBtn.UseVisualStyleBackColor = true;
             this.solveBtn.Click += new System.EventHandler(this.solveBtn_Click);
             // 
             // Form1
@@ -1515,9 +1514,9 @@
         private System.Windows.Forms.TextBox a1;
         private Infragistics.Win.Misc.UltraPanel bottomPanel;
         private Infragistics.Win.Misc.UltraLabel ultraLabel1;
-        private Infragistics.Win.Misc.UltraButton solveBtn;
         private Infragistics.Win.Misc.UltraLabel ultraLabel2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button solveBtn;
 
 
     }
