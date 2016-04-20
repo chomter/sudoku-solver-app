@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using IronPython.Runtime;
 
 
 namespace SudokuSolverApp
@@ -34,8 +35,265 @@ namespace SudokuSolverApp
 
         private void solveBtn_Click(object sender, EventArgs e)
         {           
-            Sudoku.Solve(array);   
-        }
+            PythonDictionary pydict = Sudoku.Solve(array);
+
+            if (pydict == null)
+            {
+                MessageBox.Show("Two or more same numbers in row, column or 3x3 boxes.");
+            }
+            else { 
+            foreach (var s in pydict)
+            {
+                switch (s.Key.ToString())
+                {
+                    case "A1":
+                        a1.Text = s.Value.ToString();
+                        break;
+                    case "A2":
+                        a2.Text = s.Value.ToString();
+                        break;
+                    case "A3":
+                        a3.Text = s.Value.ToString();
+                        break;
+                    case "A4":
+                        a4.Text = s.Value.ToString();
+                        break;
+                    case "A5":
+                        a5.Text = s.Value.ToString();
+                        break;
+                    case "A6":
+                        a6.Text = s.Value.ToString();
+                        break;
+                    case "A7":
+                        a7.Text = s.Value.ToString();
+                        break;
+                    case "A8":
+                        a8.Text = s.Value.ToString();
+                        break;
+                    case "A9":
+                        a9.Text = s.Value.ToString();
+                        break;
+                    case "B1":
+                        b1.Text = s.Value.ToString();
+                        break;
+                    case "B2":
+                        b2.Text = s.Value.ToString();
+                        break;
+                    case "B3":
+                        b3.Text = s.Value.ToString();
+                        break;
+                    case "B4":
+                        b4.Text = s.Value.ToString();
+                        break;
+                    case "B5":
+                        b5.Text = s.Value.ToString();
+                        break;
+                    case "B6":
+                        b6.Text = s.Value.ToString();
+                        break;
+                    case "B7":
+                        b7.Text = s.Value.ToString();
+                        break;
+                    case "B8":
+                        b8.Text = s.Value.ToString();
+                        break;
+                    case "B9":
+                        b9.Text = s.Value.ToString();
+                        break;
+                    case "C1":
+                        c1.Text = s.Value.ToString();
+                        break;
+                    case "C2":
+                        c2.Text = s.Value.ToString();
+                        break;
+                    case "C3":
+                        c3.Text = s.Value.ToString();
+                        break;
+                    case "C4":
+                        c4.Text = s.Value.ToString();
+                        break;
+                    case "C5":
+                        c5.Text = s.Value.ToString();
+                        break;
+                    case "C6":
+                        c6.Text = s.Value.ToString();
+                        break;
+                    case "C7":
+                        c7.Text = s.Value.ToString();
+                        break;
+                    case "C8":
+                        c8.Text = s.Value.ToString();
+                        break;
+                    case "C9":
+                        c9.Text = s.Value.ToString();
+                        break;
+                    case "D1":
+                        d1.Text = s.Value.ToString();
+                        break;
+                    case "D2":
+                        d2.Text = s.Value.ToString();
+                        break;
+                    case "D3":
+                        d3.Text = s.Value.ToString();
+                        break;
+                    case "D4":
+                        d4.Text = s.Value.ToString();
+                        break;
+                    case "D5":
+                        d5.Text = s.Value.ToString();
+                        break;
+                    case "D6":
+                        d6.Text = s.Value.ToString();
+                        break;
+                    case "D7":
+                        d7.Text = s.Value.ToString();
+                        break;
+                    case "D8":
+                        d8.Text = s.Value.ToString();
+                        break;
+                    case "D9":
+                        d9.Text = s.Value.ToString();
+                        break;
+                    case "E1":
+                        e1.Text = s.Value.ToString();
+                        break;
+                    case "E2":
+                        e2.Text = s.Value.ToString();
+                        break;
+                    case "E3":
+                        e3.Text = s.Value.ToString();
+                        break;
+                    case "E4":
+                        e4.Text = s.Value.ToString();
+                        break;
+                    case "E5":
+                        e5.Text = s.Value.ToString();
+                        break;
+                    case "E6":
+                        e6.Text = s.Value.ToString();
+                        break;
+                    case "E7":
+                        e7.Text = s.Value.ToString();
+                        break;
+                    case "E8":
+                        e8.Text = s.Value.ToString();
+                        break;
+                    case "E9":
+                        e9.Text = s.Value.ToString();
+                        break;
+                    case "F1":
+                        f1.Text = s.Value.ToString();
+                        break;
+                    case "F2":
+                        f2.Text = s.Value.ToString();
+                        break;
+                    case "F3":
+                        f3.Text = s.Value.ToString();
+                        break;
+                    case "F4":
+                        f4.Text = s.Value.ToString();
+                        break;
+                    case "F5":
+                        f5.Text = s.Value.ToString();
+                        break;
+                    case "F6":
+                        f6.Text = s.Value.ToString();
+                        break;
+                    case "F7":
+                        f7.Text = s.Value.ToString();
+                        break;
+                    case "F8":
+                        f8.Text = s.Value.ToString();
+                        break;
+                    case "F9":
+                        f9.Text = s.Value.ToString();
+                        break;
+                    case "G1":
+                        g1.Text = s.Value.ToString();
+                        break;
+                    case "G2":
+                        g2.Text = s.Value.ToString();
+                        break;
+                    case "G3":
+                        g3.Text = s.Value.ToString();
+                        break;
+                    case "G4":
+                        g4.Text = s.Value.ToString();
+                        break;
+                    case "G5":
+                        g5.Text = s.Value.ToString();
+                        break;
+                    case "G6":
+                        g6.Text = s.Value.ToString();
+                        break;
+                    case "G7":
+                        g7.Text = s.Value.ToString();
+                        break;
+                    case "G8":
+                        g8.Text = s.Value.ToString();
+                        break;
+                    case "G9":
+                        g9.Text = s.Value.ToString();
+                        break;
+                    case "H1":
+                        h1.Text = s.Value.ToString();
+                        break;
+                    case "H2":
+                        h2.Text = s.Value.ToString();
+                        break;
+                    case "H3":
+                        h3.Text = s.Value.ToString();
+                        break;
+                    case "H4":
+                        h4.Text = s.Value.ToString();
+                        break;
+                    case "H5":
+                        h5.Text = s.Value.ToString();
+                        break;
+                    case "H6":
+                        h6.Text = s.Value.ToString();
+                        break;
+                    case "H7":
+                        h7.Text = s.Value.ToString();
+                        break;
+                    case "H8":
+                        h8.Text = s.Value.ToString();
+                        break;
+                    case "H9":
+                        h9.Text = s.Value.ToString();
+                        break;
+                    case "I1":
+                        i1.Text = s.Value.ToString();
+                        break;
+                    case "I2":
+                        i2.Text = s.Value.ToString();
+                        break;
+                    case "I3":
+                        i3.Text = s.Value.ToString();
+                        break;
+                    case "I4":
+                        i4.Text = s.Value.ToString();
+                        break;
+                    case "I5":
+                        i5.Text = s.Value.ToString();
+                        break;
+                    case "I6":
+                        i6.Text = s.Value.ToString();
+                        break;
+                    case "I7":
+                        i7.Text = s.Value.ToString();
+                        break;
+                    case "I8":
+                        i8.Text = s.Value.ToString();
+                        break;
+                    case "I9":
+                        i9.Text = s.Value.ToString();
+                        break;
+                }
+                }             
+            }
+            
+        }      
                 
         private void TextBoxChanged(object sender, EventArgs e)
         {            
@@ -46,6 +304,7 @@ namespace SudokuSolverApp
                 {
                     case "a1":
                         array[0, 0] = Int32.Parse(a1.Text);
+                        a1.BackColor = Color.Gainsboro;
                         break;
                     case "a2":
                         array[0, 1] = Int32.Parse(a2.Text);
@@ -296,6 +555,7 @@ namespace SudokuSolverApp
                 {
                     case "a1":
                         array[0, 0] = 0;
+                        a1.BackColor = Color.White;
                         break;
                     case "a2":
                         array[0, 1] = 0;

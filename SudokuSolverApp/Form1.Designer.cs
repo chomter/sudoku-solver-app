@@ -128,9 +128,7 @@
             this.bottomPanel = new Infragistics.Win.Misc.UltraPanel();
             this.solveBtn = new System.Windows.Forms.Button();
             this.topPanel.ClientArea.SuspendLayout();
-            this.topPanel.SuspendLayout();
             this.leftPanel.ClientArea.SuspendLayout();
-            this.leftPanel.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -141,15 +139,13 @@
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.rightPanel.ClientArea.SuspendLayout();
-            this.rightPanel.SuspendLayout();
             this.bottomPanel.ClientArea.SuspendLayout();
-            this.bottomPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // topPanel
             // 
             // 
-            // topPanel.ClientArea
+            // 
             // 
             this.topPanel.ClientArea.Controls.Add(this.ultraLabel1);
             this.topPanel.Location = new System.Drawing.Point(8, 8);
@@ -174,7 +170,7 @@
             // 
             this.leftPanel.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
             // 
-            // leftPanel.ClientArea
+            // 
             // 
             this.leftPanel.ClientArea.Controls.Add(this.panel9);
             this.leftPanel.ClientArea.Controls.Add(this.panel8);
@@ -1306,6 +1302,7 @@
             // 
             // a1
             // 
+            this.a1.BackColor = System.Drawing.SystemColors.Window;
             this.a1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.a1.Location = new System.Drawing.Point(3, 3);
             this.a1.MaxLength = 1;
@@ -1319,7 +1316,7 @@
             // rightPanel
             // 
             // 
-            // rightPanel.ClientArea
+            // 
             // 
             this.rightPanel.ClientArea.Controls.Add(this.label1);
             this.rightPanel.ClientArea.Controls.Add(this.ultraLabel2);
@@ -1351,7 +1348,7 @@
             // bottomPanel
             // 
             // 
-            // bottomPanel.ClientArea
+            // 
             // 
             this.bottomPanel.ClientArea.Controls.Add(this.solveBtn);
             this.bottomPanel.Location = new System.Drawing.Point(8, 492);
@@ -1387,9 +1384,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sudoku Solver";
             this.topPanel.ClientArea.ResumeLayout(false);
-            this.topPanel.ResumeLayout(false);
             this.leftPanel.ClientArea.ResumeLayout(false);
-            this.leftPanel.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.panel8.ResumeLayout(false);
@@ -1410,9 +1405,7 @@
             this.panel1.PerformLayout();
             this.rightPanel.ClientArea.ResumeLayout(false);
             this.rightPanel.ClientArea.PerformLayout();
-            this.rightPanel.ResumeLayout(false);
             this.bottomPanel.ClientArea.ResumeLayout(false);
-            this.bottomPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
