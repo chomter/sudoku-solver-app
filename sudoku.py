@@ -1,9 +1,8 @@
-__author__ = 'Chomter'
+__author__ = 'Chomter (original by Peter Norvig)'
 
 class Sudoku:
     
     global unitlist, units, peers, squares, digits, rows, cols
-    
     
     
     def cross(A, B):
