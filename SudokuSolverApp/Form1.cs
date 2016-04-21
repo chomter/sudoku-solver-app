@@ -303,8 +303,7 @@ namespace SudokuSolverApp
                 switch (textboxName)
                 {
                     case "a1":
-                        array[0, 0] = Int32.Parse(a1.Text);
-                        a1.BackColor = Color.Gainsboro;
+                        array[0, 0] = Int32.Parse(a1.Text);                        
                         break;
                     case "a2":
                         array[0, 1] = Int32.Parse(a2.Text);
@@ -439,8 +438,7 @@ namespace SudokuSolverApp
                         array[4, 8] = Int32.Parse(e9.Text);
                         break;
                     case "f1":
-                        array[5, 0] = Int32.Parse(f1.Text);
-                        break;
+                        array[5, 0] = Int32.Parse(f1.Text);                    break;
                     case "f2":
                         array[5, 1] = Int32.Parse(f2.Text);
                         break;
@@ -555,7 +553,6 @@ namespace SudokuSolverApp
                 {
                     case "a1":
                         array[0, 0] = 0;
-                        a1.BackColor = Color.White;
                         break;
                     case "a2":
                         array[0, 1] = 0;
