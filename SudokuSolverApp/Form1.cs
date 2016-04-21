@@ -39,7 +39,7 @@ namespace SudokuSolverApp
 
             if (pydict == null)
             {
-                MessageBox.Show("Two or more same numbers in row, column or 3x3 boxes.");
+                MessageBox.Show("Two or more same numbers in row, column or 3x3 boxes OR there is no solution.");
             }
             else { 
             foreach (var s in pydict)
