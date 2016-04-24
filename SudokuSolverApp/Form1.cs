@@ -296,7 +296,8 @@ namespace SudokuSolverApp
         }      
                 
         private void TextBoxChanged(object sender, EventArgs e)
-        {            
+        {
+            clearBtn.Visible = true;
             string textboxName = ((TextBox)sender).Name;
             if (((TextBox)sender).Text != "")
             {
@@ -796,7 +797,24 @@ namespace SudokuSolverApp
                         break;
                     }
                 }
-            }      
+            }
+
+        private void clearBtn_Click(object sender, EventArgs e)
+        {
+            ClearTextBoxes(this.Controls);
+        }
+
+        private void ClearTextBoxes(Control.ControlCollection cc)
+        {
+            foreach (Control ctrl in cc)
+            {
+                TextBox tb = ctrl as TextBox;
+                if (tb != null)
+                    tb.Text = "";
+                else
+                    ClearTextBoxes(ctrl.Controls);
+            }
         }
     }
+}
 

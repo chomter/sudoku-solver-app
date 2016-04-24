@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.topPanel = new Infragistics.Win.Misc.UltraPanel();
             this.ultraLabel1 = new Infragistics.Win.Misc.UltraLabel();
             this.leftPanel = new Infragistics.Win.Misc.UltraPanel();
@@ -127,6 +128,7 @@
             this.ultraLabel2 = new Infragistics.Win.Misc.UltraLabel();
             this.bottomPanel = new Infragistics.Win.Misc.UltraPanel();
             this.solveBtn = new System.Windows.Forms.Button();
+            this.clearBtn = new System.Windows.Forms.Button();
             this.topPanel.ClientArea.SuspendLayout();
             this.leftPanel.ClientArea.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -148,6 +150,7 @@
             // 
             // 
             this.topPanel.ClientArea.Controls.Add(this.ultraLabel1);
+            //this.topPanel.Controls.Add(this.topPanel.ClientArea);
             this.topPanel.Location = new System.Drawing.Point(8, 8);
             this.topPanel.Name = "topPanel";
             this.topPanel.Size = new System.Drawing.Size(766, 70);
@@ -181,6 +184,7 @@
             this.leftPanel.ClientArea.Controls.Add(this.panel3);
             this.leftPanel.ClientArea.Controls.Add(this.panel2);
             this.leftPanel.ClientArea.Controls.Add(this.panel1);
+            //this.leftPanel.Controls.Add(this.leftPanel.ClientArea);
             this.leftPanel.Location = new System.Drawing.Point(8, 84);
             this.leftPanel.Name = "leftPanel";
             this.leftPanel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -1320,6 +1324,7 @@
             // 
             this.rightPanel.ClientArea.Controls.Add(this.label1);
             this.rightPanel.ClientArea.Controls.Add(this.ultraLabel2);
+            //this.rightPanel.Controls.Add(this.rightPanel.ClientArea);
             this.rightPanel.Location = new System.Drawing.Point(451, 84);
             this.rightPanel.Name = "rightPanel";
             this.rightPanel.Size = new System.Drawing.Size(323, 486);
@@ -1351,6 +1356,7 @@
             // 
             // 
             this.bottomPanel.ClientArea.Controls.Add(this.solveBtn);
+            //this.bottomPanel.Controls.Add(this.bottomPanel.ClientArea);
             this.bottomPanel.Location = new System.Drawing.Point(8, 492);
             this.bottomPanel.Name = "bottomPanel";
             this.bottomPanel.Size = new System.Drawing.Size(437, 78);
@@ -1367,17 +1373,31 @@
             this.solveBtn.UseVisualStyleBackColor = true;
             this.solveBtn.Click += new System.EventHandler(this.solveBtn_Click);
             // 
+            // clearBtn
+            // 
+            this.clearBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearBtn.Location = new System.Drawing.Point(514, 266);
+            this.clearBtn.Name = "clearBtn";
+            this.clearBtn.Size = new System.Drawing.Size(139, 38);
+            this.clearBtn.TabIndex = 5;
+            this.clearBtn.Text = "Clear";
+            this.clearBtn.UseVisualStyleBackColor = true;
+            this.clearBtn.Visible = false;
+            this.clearBtn.Click += new System.EventHandler(this.clearBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(782, 578);
+            this.Controls.Add(this.clearBtn);
             this.Controls.Add(this.bottomPanel);
             this.Controls.Add(this.rightPanel);
             this.Controls.Add(this.leftPanel);
             this.Controls.Add(this.topPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Padding = new System.Windows.Forms.Padding(5);
@@ -1510,6 +1530,7 @@
         private Infragistics.Win.Misc.UltraLabel ultraLabel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button solveBtn;
+        private System.Windows.Forms.Button clearBtn;
 
 
     }
