@@ -439,7 +439,8 @@ namespace SudokuSolverApp
                         array[4, 8] = Int32.Parse(e9.Text);
                         break;
                     case "f1":
-                        array[5, 0] = Int32.Parse(f1.Text);                    break;
+                        array[5, 0] = Int32.Parse(f1.Text); 
+                        break;
                     case "f2":
                         array[5, 1] = Int32.Parse(f2.Text);
                         break;
