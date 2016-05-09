@@ -803,6 +803,7 @@ namespace SudokuSolverApp
         private void clearBtn_Click(object sender, EventArgs e)
         {
             ClearTextBoxes(this.Controls);
+            clearBtn.Visible = false;
         }
 
         private void ClearTextBoxes(Control.ControlCollection cc)
