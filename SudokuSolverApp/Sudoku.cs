@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using IronPython.Hosting;
-using Microsoft.Scripting.Hosting;
 using IronPython.Runtime;
-using System.Windows.Forms;
 
 
 namespace SudokuSolverApp
@@ -25,7 +19,7 @@ namespace SudokuSolverApp
             string numbers = string.Join("", nums);
 
             var engine = Python.CreateEngine();
-            dynamic py = engine.ExecuteFile(@"C:\sudoku.py");
+            dynamic py = engine.ExecuteFile("sudoku.py");
             dynamic sud = py.Sudoku();
             PythonDictionary d = null;
             try
